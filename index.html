@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaizaan Hussain Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/download.jpeg">
+
+    <script src="https://kit.fontawesome.com/eb9d03ed57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+    </div>
+    <div class="progress-bar"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nameLogo.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Coursework</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Full Stack Developer</p> -->
+                <div class="container first" id="text"></div>
+                <h1>Hello World, <br>I'm <span>Shaizaan</span> Hussain.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <a href="https://www.instagram.com/azaan_life/">
+                        <img src="images/user.jpg" alt="">
+                    </a>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="ab">MERN Stack Developer with expertise in MongoDB, Express.js, React, and Node.js. Skilled in building scalable, high-performance web applications, RESTful APIs, and dynamic UI/UX designs. Proficient in JavaScript, Redux, and cloud deployment. Passionate about optimizing performance, ensuring security, and delivering seamless user experiences. Strong problem-solving and team collaboration skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br><pre>&#183 Java                 &#183 C++   <br>&#183 HTML               &#183 CSS    <br>&#183 JavaScript</pre></li>
+                            <li><span>Technologies</span><br><pre>&#183 MongoDB         &#183 Express   <br>&#183 ReactJs            &#183 NodeJs   <br>&#183 TailwindCSS</pre></li>
+                            <li><span> Tools</span><br><pre> &#183 Github             &#183 Git</pre></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span><pre>Chandigarh University                                                2022 - 2026</pre></span><span class="loc">Mohali - Punjab</span> <br> B.E - CSE
+                            <p>CGPA - 7.77</p>
+                        </li>
+                        <li><span><pre>Pragati Public Sr. Sec School                                    2020 - 2021</pre></span><span class="loc">Kota - Rajasthan </span> <br> 12th - CBSE
+                        <p>Percentage - 95%</p>
+                        </li>
+                        <li><span><pre>Pragati Public Sr. Sec School                                    2018 - 2019</pre></span><span class="loc">Kota - Rajasthan </span> <br>10th - CBSE
+                        <p>Percentage - 92.8%</p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Related Coursework</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Structures and Algorithms</h2>
+                    <p>Data structures organize data efficiently, while algorithms process data effectively. Together, they optimize computing performance, enabling problem-solving and efficient execution.</p>
+                    <a href="https://www.geeksforgeeks.org/what-is-dsa-dsa-full-form/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-windows"></i>
+                    <h2>Operating System</h2>
+                    <p>An operating system manages hardware, executes applications, handles memory, processes, and files, ensuring efficient resource allocation, security, and user interaction.</p>
+                    <a href="https://www.geeksforgeeks.org/what-is-an-operating-system/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development creates websites using HTML, CSS, and JavaScript, handling front-end, back-end, databases, and user experience for functionality. Expertise in MERN Stack.</p>
+                    <a href="https://www.geeksforgeeks.org/mern-stack/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/image4.jpeg" alt="">
+                <div class="layer">
+                    <h3>Artificial Intelligent Image Generating Website</h3>
+                    <p class="font">Developed AI image generation website using Hugging Face API. Leveraged AI to create unique and visually appealing images.
+                    </p>
+                    <a href="https://azaanimagegen.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image5.jpg" alt="">
+                <div class="layer">
+                    <h3>Word Meaning Finder- Dictionary</h3>
+                    <p class="font"> Word Meaning Finder- A Dictionary App using an API allows users to find word meanings by fetching data
+                        from an online dictionary API.
+                    </p>
+                    <a href="https://github.com/Shaizaan-Hussain/Shaizaan-Hussain-Words-Meaning-Finder---Dictionary"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image3.jpg" alt="">
+                <div class="layer">
+                    <h3> IOT Based Water Management System</h3>
+                    <p class="font">Arduino sensors monitor water levels, ensuring efficient resource utilization. Mobile app provides remote
+                        monitoring and control for user convenience.
+                    </p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Shaizaan-Hussain?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certification and Training</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>Cloud Computing</h2>
+                <h3>IIT Kharagpur</h3>
+                <p>Cloud computing delivers on-demand computing services like storage, processing, and networking over the internet, enabling scalability, flexibility, and cost-efficiency.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-sitemap"></i>
+                <h2> Multi-Core Computer Architecture</h2>
+                <h3>IIT Guwahati</h3>
+                <p>Multi-core computer architecture integrates multiple processing cores on a single chip, enhancing parallelism, performance, energy efficiency, and multitasking capabilities in computing systems.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2> Intelligent System and Smart Application (IoT)</h2>
+                <h3>In House Training - Chandigarh University</h3>
+                <p>Intelligent systems and smart applications (IoT) use AI, sensors, and connectivity to enable automation, real-time decision-making, and efficient data-driven operations.</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://drive.google.com/file/d/1266ijkHmhHW9dXoNi6OmdBT5SYl0CxEh/view?usp=sharing" class="btn">See More</a>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> shaizaan.hussain786@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>+91 - 6350067083</p>
+                <div class="social-icons">
+                    <!-- <a href=""><i class="fa-solid fa-location-dot"></i></a> -->
+                    <a href="https://www.instagram.com/azaan_life/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shaizaan-hussain21/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Shaizaan-Hussain"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/Shaizaan_Hussain/"><i class="fa-solid fa-code"></i></a>
+                    
+                </div>
+                <a href=""  download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Leave Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+        <p>&#169 Copyright 2025 | Design by <span>Shaizaan</span>. </p><br>
+        <p class="hh">Join The Journey <i class="fa-solid fa-heart"></i></p>
+    </div> -->
+    <div class="copyright">
+        <p>&#169; Copyright <span id="year"></span> | Design by <span>Shaizaan</span>.</p><br>
+        <p class="hh">Join The Journey <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links')
+        var tabcontents = document.getElementsByClassName('tab-contents')
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6KbwTqw1FAp6l2ojod6pgP9HgQGa057uWdQ-rfh57tV2B5EZvogAFPEi_aQCz6Zny/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+       <script>
+        window.onscroll = function () {
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let progress = (scrollTop / scrollHeight) * 100;
+            document.querySelector(".progress-bar").style.width = progress + "%";
+        };
+    </script>
+    <script>
+        const words = ["Full Stack Developer ", "UI/UX Designer ", "Competitive Coder ", "Learning Enthusiast "];
+        let index = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const speed = 100;
+        const delay = 1000;
+        const textElement = document.getElementById("text");
+
+        function typeEffect() {
+            let currentWord = words[index];
+            if (isDeleting) {
+                textElement.textContent = currentWord.substring(0, charIndex--);
+            } else {
+                textElement.textContent = currentWord.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, delay);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                index = (index + 1) % words.length;
+                setTimeout(typeEffect, 300);
+            } else {
+                setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+            }
+        }
+
+        typeEffect();
+    </script>
+    <script>
+        let progress = 0;
+        const loadingBar = document.getElementById("loading-bar");
+
+        function simulateLoading() {
+            if (progress < 100) {
+                progress += Math.random() * 10; // Increment progress randomly
+                loadingBar.style.width = progress + "%";
+                setTimeout(simulateLoading, 100); // Update every 100ms
+            } else {
+                loadingBar.style.width = "100%";
+                setTimeout(() => {
+                    document.getElementById("loading-bar-container").style.display = "none"; // Hide after complete
+                }, 500);
+            }
+        }
+
+        window.onload = function () {
+            simulateLoading();
+        };
+    </script>
+</body>
+</html>
