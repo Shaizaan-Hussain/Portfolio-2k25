@@ -1,0 +1,1 @@
+A responsive portfolio made with Java, CSS, and JavaScript features a structured layout with a clean UI. Java handles backend operations like data processing and file handling, while CSS ensures a visually appealing, responsive design using media queries and flexbox/grid. JavaScript add interactivity.
